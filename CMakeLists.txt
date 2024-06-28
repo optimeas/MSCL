@@ -139,8 +139,8 @@ if(NOT DEFINED Boost_ROOT)
 endif()
 
 # Find the static version of boost
-set(Boost_USE_STATIC_LIBS ON)
-set(Boost_USE_STATIC_RUNTIME ON)
+set(Boost_USE_STATIC_LIBS OFF)
+set(Boost_USE_STATIC_RUNTIME OFF)
 find_package(Boost ${Boost_REQUESTED_VERSION} EXACT REQUIRED COMPONENTS ${Boost_REQUESTED_COMPONENTS})
 set(Boost_STATIC_LIBRARIES ${Boost_LIBRARIES})
 message(STATUS "Boost_STATIC_LIBRARIES: " ${Boost_LIBRARIES})
