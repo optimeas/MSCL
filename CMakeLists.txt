@@ -55,7 +55,6 @@ endif()
 
 # These flags can be passed string values. For example, -DOPENSSL_ROOT_DIR="/usr/lib"
 # Different default search paths for windows
-set(Boost_REQUESTED_VERSION "1.68.0" CACHE INTERNAL "Required version of boost")
 
 if(WIN32)
   string(REPLACE "." "_" Boost_REQUESTED_VERSION_UNDERSCORE ${Boost_REQUESTED_VERSION})
